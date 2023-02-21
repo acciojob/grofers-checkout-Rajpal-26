@@ -3,12 +3,11 @@ getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
 const newRow = document.createElement('tr');
-const totalCell1 = document.createElement('td');
-totalCell1.append("Total Price");
-const totalCell2 = document.createElement('td');
+const totalCell = document.createElement('td');
+totalCell.setAttribute('id', 'ans')
 
-newRow.appendChild(totalCell1);
-newRow.appendChild(totalCell2);
+newRow.appendChild(totalCell);
+
 
 // Add the new row to the table
 const table = document.querySelector('table');
@@ -24,7 +23,7 @@ const getSum = () => {
     }   
     // console.log(total)
     // return total;
-    return totalCell2.innerHTML = total;
+    return totalCell.innerHTML = total;
     
 };
 
