@@ -2,8 +2,9 @@ const getSumBtn = document.createElement("button");
 getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 const lastRow = document.createElement("tr")
+const tdata = document.createElement("td")
 
-document.body.appendChild(lastRow);
+document.body.appendChild(tdata);
 let total = 0;
 const getSum = () => {
 //Add your code here
@@ -14,7 +15,7 @@ const getSum = () => {
     }   
     // console.log(total)
     // return total;
-    return lastRow.innerHTML = "Total Price: " + total;
+    return tdata.innerHTML = total;
     
 };
 
