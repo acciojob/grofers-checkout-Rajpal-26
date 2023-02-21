@@ -1,7 +1,7 @@
 const getSumBtn = document.createElement("button");
 getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
-const lastRow = document.createElement("p")
+const lastRow = document.createElement("tr")
 
 document.body.appendChild(lastRow);
 let total = 0;
@@ -12,10 +12,10 @@ const getSum = () => {
     for (let i = 0; i < price.length; i++) {
         total += parseFloat(price[i].innerHTML);
     }   
-    console.log(total)
+    // console.log(total)
     // return total;
     return lastRow.innerHTML = "Total Price: " + total;
-
+    
 };
 
     
